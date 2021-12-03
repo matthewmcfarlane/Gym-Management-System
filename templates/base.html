@@ -5,19 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/css/normalise.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/static/css/styles.css">
     <title>{{ title }}</title>
 </head>
 <header>
-    <div class="header">
-        <div>
-            <img src="/static/images/logo.png" alt="Logo">
-        </div>
-    </div>
-
+    <img class="logo" src="/static/images/logo.png" alt="Logo">
+        <h1 class="page_name">
+            {{ current_page }}
+        </h1>
+        
 </header>
 <body>
     <ul>
-        <li><a class="active" href="/">Home</a></li>
+        <li><a href="/">Home</a></li>
         <li><a href="/members">Members</a></li>
         <li><a href="/classes">Classes</a></li>
         <li><a href="/bookings">Bookings</a></li>

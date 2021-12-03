@@ -1,0 +1,30 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+    height: 61px;
+    width: 111px;
+    position: fixed;
+    padding: 15px;
+}
+
+header {
+    font-family: 'Roboto', sans-serif;
+    position: sticky;
+    background-color: silver;
+    height: 85px;
+    border: crimson 1px solid;
+    box-shadow: blueviolet 0px 1px 3px;
+}
+
+h1 {
+    margin-left: 130px;
+    position: sticky;
+    margin-top: 30px;
+    color: crimson;
+
+    
+}
+
+
