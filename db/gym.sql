@@ -15,11 +15,11 @@ CREATE TABLE members(
 CREATE TABLE fitness_classes(
     id SERIAL PRIMARY KEY,
     name VARCHAR(255),
-    active BOOLEAN,
     capacity INT
     start_time VARCHAR(255)
     duration INT,
     day VARCHAR(255)
+    active BOOLEAN,
     );
 
 CREATE TABLE bookings(
