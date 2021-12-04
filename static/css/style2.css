@@ -74,14 +74,16 @@
     border-bottom: 1px solid #e0e4e8;
   }
   
-  .wrapper .main_content .info{
+  .wrapper .main_content .content{
     margin: 20px;
     color: #717171;
     line-height: 25px;
   }
   
-  .wrapper .main_content .info div{
+  .wrapper .main_content .content div{
     margin-bottom: 20px;
   }
+
+  
 
 
