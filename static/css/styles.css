@@ -1,8 +1,10 @@
 body{
     font-family: 'Roboto', sans-serif;
+    color: #030303;
+    background-color:#e9eceb;
 }
 
-.logo {
+.logo > img{
     height: 61px;
     width: 111px;
     position: fixed;
@@ -11,20 +13,88 @@ body{
 
 header {
     font-family: 'Roboto', sans-serif;
-    position: sticky;
+    position: fixed;
+    background-color: #213f37;
+    top: 0;
+    width: 100%;
+    height: 85px;
+    border: rgb(87, 76, 79) 1px solid;
+    box-shadow: rgb(96, 15, 172) 0px 1px 3px;
+    opacity: 80%;
+    z-index: 2;
+}
+
+/* header {
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
     background-color: silver;
     height: 85px;
+    width: 100%;
     border: crimson 1px solid;
     box-shadow: blueviolet 0px 1px 3px;
-}
+    margin-top: 0px;
+    padding-top: 0px;
+} */
 
 h1 {
     margin-left: 130px;
-    position: sticky;
+    position: fixed;
     margin-top: 30px;
     color: crimson;
-
-    
 }
 
+a{
+    text-decoration: none;
+}
+    
 
+/* list-style-type: none;
+margin: 0;
+padding: 0;
+width: 25%;
+background-color: #f1f1f1;
+position: fixed;
+height: 100%;
+overflow: auto; */
+
+nav {
+    position: fixed;
+    /* padding: 5px; */
+    min-height: 100%;
+    width: 140px;
+    /* overflow: auto; */
+    background-color: #116466;
+    padding: 0;
+    opacity: 80%;
+    /* margin-top: 38px; */
+    top: 88px;
+
+    
+  }
+  
+  nav ul li {
+    margin-bottom: 40px;
+    text-align: center;
+    text-decoration-style: none;
+
+
+
+  }
+  
+  ul {
+    padding: 0px;
+    margin-top: 50px;
+    list-style: none;
+    
+  }
+  
+  .content{
+      position: absolute;
+    margin-left: 143px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: justify;
+    margin-top: 100px;
+    overflow: auto;
+
+  }
