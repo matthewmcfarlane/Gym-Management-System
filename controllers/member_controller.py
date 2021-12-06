@@ -10,5 +10,6 @@ members_blueprint = Blueprint("members", __name__)
 def members():
     members = member_repository.select_all()
     return render_template("members/index.html", members = members, current_page = 'Members')
+    
 
 

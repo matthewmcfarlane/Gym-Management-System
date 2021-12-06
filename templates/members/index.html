@@ -1,5 +1,35 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    placeholder
+
+<div class="add_member_logo">
+    <a href="/members/add"> <img src="/static/images/add_member.png" alt="Add Member Logo/Button"></a>
+</div>
+    <table class="members">
+        <caption>All Members</caption>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>DOB</th>
+        <th>Email</th>
+        <th>Membership Type</th>
+        <th>Active</th>
+
+        {% for member in members %}
+            
+        <tr>
+            <td><a href="/members/{{ member.id }}">{{ member.id }}</a></td>
+            <td>{{ member.first_name }}</td>
+            <td>{{ member.last_name }}</td>
+            <td>{{ member.dob }}</td>
+            <td>{{ member.email }}</td>
+            <td>{{ member.membership_type }}</td>
+            <td>{{ member.active }}</td>
+        </tr>
+        
+
+        {% endfor %}
+
+
+    </table>
 {% endblock content %}

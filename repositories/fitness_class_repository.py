@@ -6,7 +6,7 @@ from models.fittness_class import FitnessClass
 
 #CREATE
 def save(fitness_class):
-    sql = "INSERT INTO fitness_classes (name, active, capacity, start_time, duration, day) VALUES (%s, %s, %s, %s, %s, %s) RETURNING id"
+    sql = "INSERT INTO fitness_classes (name, capacity, start_time, duration, day, active) VALUES (%s, %s, %s, %s, %s, %s) RETURNING id"
     values = [fitness_class.name, fitness_class.capacity, fitness_class.start_time, fitness_class.duration, fitness_class.day, fitness_class.active]
     results = run_sql(sql, values)
     id = results[0]['id']
@@ -44,7 +44,7 @@ def update(fitness_class):
 
 #DELETE
 def delete_all():
-    sql = "DELETE * FROM fitness_classes"
+    sql = "DELETE FROM fitness_classes"
     run_sql(sql)
 
 def delete_id(id):
