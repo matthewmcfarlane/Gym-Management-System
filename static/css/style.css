@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  
+  }
+  
+  body{
+     background-color: #fff;
+  }
+  
+  .wrapper{
+    display: flex;
+    position: relative;
+  }
+  
+  .wrapper nav{
+    background: #4b4276;
+    position: fixed;
+    height: 100%;
+    width: 200px;
+    padding: 20px 0px;
+  }
+  
+  .wrapper nav h2{
+    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .wrapper nav ul{
+    list-style: none;
+  }
+  .wrapper nav ul li{
+    padding: 15px;
+    border-bottom: 1px solid #bdb8d7;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(255,255,255,0.05);
+    list-style: none;
+  }    
+  
+  .wrapper nav ul li a{
+    color: #bdb8d7;
+    display: block;
+    text-decoration: none;
+  }
+  
+  .wrapper nav ul li a .fas{
+    width: 25px;
+  }
+  
+  .wrapper nav ul li:hover{
+    background-color: #594f8d;
+  }
+      
+  .wrapper nav ul li:hover a{
+    color: #fff;
+  }
+   
+  
+
+  
+  .wrapper .main_content{
+    width: 100%;
+    margin-left: 200px;
+  }
+  
+  .wrapper .main_content .header{
+    padding: 20px;
+    background: #fff;
+    color: #717171;
+    border-bottom: thin solid #e0e4e8;
+  }
+  
+  .wrapper .main_content .content{
+    margin: 20px;
+    color: #717171;
+    line-height: 25px;
+  }
+  
+  .wrapper .main_content .content div{
+    margin-bottom: 20px;
+  }
+
+  .add_member_logo > a > img {
+      height: 50px;
+      width: 50px;
+  
+  }
+
+.members_table{
+    border-collapse: collapse;
+    margin: 25px 0px;
+    font-size: 0.9em;
+    min-width: 800px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+
+}
+
+.members_table > thead > tr{
+    background-color: #009878;
+    color: #ffffff;
+    text-align: left;
+}
+
+.members_table > th{
+    padding: 12px 15px;
+}
+
+.members_table > td{
+    padding: 12px 15px;
+}
+
+.members_table > tbody >tr {
+    border-bottom: thin solid #dddddd;
+}
+
+.members_table > tbody >tr:nth-of-type(){
+    background-color: #f3f3f3;
+}
+
+.members_table > tbody >tr:last-of-type{
+    border-bottom: thin solid #009879;
+}
+
+
+
+
+
+
+.add_class_logo > a >img{
+    height: 50px;
+    width: 50px;
+    
+}
+
+.classes_table{
+  border-collapse: collapse;
+  margin: 25px 0px;
+  font-size: 0.9em;
+  min-width: 800px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+
+}
+
+.classes_table > thead > tr{
+  background-color: #009878;
+  color: #ffffff;
+  text-align: left;
+}
+
+.classes_table > th{
+  padding: 12px 15px;
+}
+
+.classes_table > td{
+  padding: 12px 15px;
+}
+
+.classes_table > tbody >tr {
+  border-bottom: thin solid #dddddd;
+}
+
+.classes_table > tbody >tr:nth-of-type(){
+  background-color: #f3f3f3;
+}
+
+.classes_table > tbody >tr:last-of-type{
+  border-bottom: thin solid #009879;
+}
+
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 600px;
+  flex-direction: row;
+
+}
+
+.flex-grid > div {
+  display: flex;
+  flex-basis: calc(50% - 40px);
+  justify-content: center;
+  flex-direction: column;
+}
+.flex-grid > div > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.box {
+  margin:20px;
+  text-align: center;
+  border-collapse: collapse;
+  font-size: 0.9em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  
+}
+
+
+
+.adbookings_logo > img{
+  height: 50px;
+  width: 50px;
+  
+}
+
+.bookings_table{
+border-collapse: collapse;
+margin: 25px 0px;
+font-size: 0.9em;
+min-width: 800px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+
+}
+
+.bookings_table > thead > tr{
+background-color: #009878;
+color: #ffffff;
+text-align: left;
+}
+
+.bookings_table > th{
+padding: 12px 15px;
+}
+
+.bookings_table > td{
+padding: 12px 15px;
+}
+
+.bookings_table > tbody >tr {
+border-bottom: thin solid #dddddd;
+}
+
+.bookings_table > tbody >tr:nth-of-type(){
+background-color: #f3f3f3;
+}
+
+.bookings_table > tbody >tr:last-of-type{
+border-bottom: thin solid #009879;
+}

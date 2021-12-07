@@ -19,7 +19,7 @@ def select(id):
     fitness_class = None
     sql = "SELECT * FROM fitness_classes WHERE id = %s"
     values = [id]
-    result= run_sql(sql, values)
+    result= run_sql(sql, values)[0]
     if result is not None:
         fitness_class = FitnessClass(result['name'],
         result['capacity'], result['start_time'], result['duration'], result['day'],result['active'], result['id'])
@@ -47,9 +47,20 @@ def delete_all():
     sql = "DELETE FROM fitness_classes"
     run_sql(sql)
 
-def delete_id(id):
-    sql = "DELETE * FROM fitness_classes WHERE id = %s"
+def delete_class(id):
+    sql = "DELETE FROM fitness_classes WHERE id = %s"
     values = [id]
     run_sql(sql, values)
 
 
+def fitness_classes(member):
+    fitness_classes = []
+
+    sql = "SELECT fitness_classes.* FROM fitness_classes INNER JOIN bookings ON bookings.fitness_class_id = fitness-classes.id WHERE member_id = %s"
+    values = [member.id]
+    results = run_sql(sql, values)
+
+    for row in results:
+        fitness_class = FitnessClass(row["name"], row["capacity"], row["start_time"], row["duration"], row["day"], row["active"], row["id"])
+        fitness_classes.append(fitness_class)
+    return fitness_classes

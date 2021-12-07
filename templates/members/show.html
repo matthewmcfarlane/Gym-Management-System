@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h3>Classes:</h3>
+<ul>
+    {% for class in classes %}
+
+    <li>{{ class.name }}, {{ class.time }}, {{ class.day }}</li>
+        
+    {% endfor %}
+</ul>
+{% endblock content %}

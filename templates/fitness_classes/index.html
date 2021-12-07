@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="add_class_logo">
+    
+    <a href="/fitness_classes/add"> <img src="/static/images/add_class.png" alt="Add ClassLogo/Button"></a>
+</div>
+    <table class="classes_table">
+        <caption>All Classes</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Start Time</th>
+                <th>Duration</th>
+                <th>Day</th>
+                <th>Active</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for class in classes %}
+            <tr>
+                <td><a href="/fitness_classes/{{ class.id }}"></a>{{ class.name}}</td>
+                <td>{{ class.start_time }}</td>
+                <td>{{ class.duration}}</td>
+                <td>{{ class.day }}</td>
+                <td>{{ class.active }}</td>
+                <td>
+                    <form class="delete_form" action="/fitness_classes/{{ class.id }}/delete" method="POST">
+                        <button>Delete</button>
+                    </form>
+                </td>
+            </tr>
+            
+    
+            {% endfor %}
+        </tbody>
+            
+        
+
+
+    </table>
+{% endblock content %}

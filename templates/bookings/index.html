@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="add_class_logo">
+    <a href="/fitness_classes/add"> <img src="/static/images/add_class.png" alt="Add ClassLogo/Button"></a>
+</div>
+<table class="bookings_table">
+    <caption>Bookings</caption>
+    <thead>
+        <tr>
+            <th>Booking ID</th>
+            <th>Member ID</th>
+            <th>Class ID</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for booking in bookings %}
+        <tr>
+            <td>{{ booking.id}}</td>
+            <td>{{ booking.member.id}}</td>
+            <td>{{ booking.fitness_class.id }}</td>
+            <td>
+                <form class="delete_form" action="/bookings/{{ booking.id }}/delete" method='POST'>
+                    <button >Delete</button>
+                </form>
+            </td>
+        </tr>
+
+
+        {% endfor %}
+    </tbody>
+
+
+
+
+</table>
+{% endblock content %}

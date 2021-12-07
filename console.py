@@ -1,4 +1,6 @@
 import pdb
+
+from flask.globals import current_app
 from models.fittness_class import FitnessClass
 from models.member import Member
 from models.booking import Booking
@@ -33,6 +35,8 @@ booking3 = Booking(member3, fitness_class3)
 booking_repository.save(booking1)
 booking_repository.save(booking2)
 booking_repository.save(booking3)
+pdb.set_trace()
+booking_repository.select_all()
 
 
 pdb.set_trace()

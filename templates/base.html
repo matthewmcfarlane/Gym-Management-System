@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="/static/css/style2.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+   
     <title>{{ title }}</title>
 </head>
 
@@ -19,10 +19,10 @@
         <nav>
             <h2>GYM MANAGEMENT</h2>
             <ul>
-                <li><a href="/"><i class="fas fa-home"></i>Home</a></li>
-                <li><a href="/members"><i class="fas fa-user"></i>Members</a></li>
-                <li><a href="/classes"><i class="fas fa-address-card"></i>Classes</a></li>
-                <li><a href="bookings"><i class="fas fa-project-diagram"></i>Bookings</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/members">Members</a></li>
+                <li><a href="/fitness_classes">Classes</a></li>
+                <li><a href="bookings">Bookings</a></li>
             </ul> 
         </nav>
         <div class="main_content">

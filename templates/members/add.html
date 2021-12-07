@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block content %}
+    
+
+<form action="/members" method="post">
+    <div>
+      <label for="first_name">First Name:</label>
+      <input type="text" id="first_name" name="first_name" placeholder="first_name" required autofocus>
+    </div>
+  
+    <div>
+      <label for="last_name">Last name:</label>
+      <input type="text" id="last_name" name="last_name" placeholder="Last Name" required>
+    </div>
+  
+    <div>
+      <label for="dob">Date of Birth:</label>
+        <input type="date", id="dob" name="dob">
+    </div>
+  
+
+    <div>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Email" required>
+      </div>
+
+      <div>
+        <label for="membership_type">Membership Type:</label>
+        <select name="membership_type" id="membership_type">
+        <option value="Standard">Standard</option>
+        <option value="Premium">Premium</option>
+    </select>
+      </div>
+
+      <div>
+        <label for="active">Active:</label>
+        <select name="active" id="active">
+        <option value="True">True</option>
+        <option value="False">False</option>
+    </select>
+      </div>
+
+
+    <button type="submit">Add Member</button>
+  
+  </form>
+
+  {% endblock content %}
