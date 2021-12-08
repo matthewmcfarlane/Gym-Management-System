@@ -1,7 +1,8 @@
 from flask import Flask, render_template, redirect, request, Blueprint
 from models.booking import Booking
 
-
+import repositories.fitness_class_repository as fcr
+import repositories.member_repository as member
 import repositories.booking_repository as booking_repository
 
 
@@ -18,3 +19,20 @@ def delete_booking(id):
     booking_repository.delete(id)
     return redirect("/bookings")
 
+
+
+@bookings_blueprint.route('/bookings/add')
+def new_booking():
+    classes = fcr.select_all()
+    members = member.select_all()
+    return render_template("/bookings/add.html", title='Add Booking', current_page='Add New Booking', classes=classes, members=members)
+
+@bookings_blueprint.route('/bookings', methods=['POST'])
+def create_booking():
+    member_id = request.form['member_id']
+    fitness_class_id = request.form['fitness_class_id']
+    mem = member.select(member_id)
+    fitness_class = fcr.select(fitness_class_id)
+    booking = Booking(mem, fitness_class)
+    booking.save(booking)
+    return redirect('/bookings')
