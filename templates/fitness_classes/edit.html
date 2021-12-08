@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% block content %}
+    
+
+<form class="add-form" action="/fitness_classes/{{ fitness_class.id }}" method="post">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"  value="{{ fitness_class.name }}" placeholder="Name" required autofocus>
+    </div>
+  
+    <div>
+        <label for="capacity">Capacity:</label>
+          <input type="number", id="capacity" name="capacity" value="{{ fitness_class.capacity }}" placeholder="Capacity">
+      </div>
+
+    <div>
+      <label for="start_time">Start Time:</label>
+      <input type="time" id="start_time" name="start_time" value="{{ fitness_class.start_time }}" placeholder="Start Time" required>
+    </div>
+  
+    <div>
+      <label for="duration">Duration:</label>
+        <input type="number", id="duration" name="duration" value="{{ fitness_class.duration }}" placeholder="Duration (mins)">
+    </div>
+  
+
+    <div>
+        <label for="day">Day:</label>
+        <select name="day" id="day">
+            <option value="Monday"{% if fitness_class.day == "Monday" %}
+                selected="selected"
+            {% endif %}>Monday</option>
+            <option value="Tuesday"{% if fitness_class.day == "Tuesday" %}
+                selected="selected"
+            {% endif %}>Tuesday</option>
+            <option value="Wednesday"{% if fitness_class.day == "Wednesday" %}
+                selected="selected"
+            {% endif %}>Wednesday</option>
+            <option value="Thursday"{% if fitness_class.day == "Thursday" %}
+                selected="selected"
+            {% endif %}>Thursday</option>
+            <option value="Friday"{% if fitness_class.day == "Friday" %}
+                selected="selected"
+            {% endif %}>Friday</option>
+            <option value="Saturday"{% if fitness_class.day == "Saturday" %}
+                selected="selected"
+            {% endif %}>Saturday</option>
+            <option value="Sunday"{% if fitness_class.day == "Sunday" %}
+                selected="selected"
+            {% endif %}>Sunday</option>
+        </select>
+      </div>
+
+
+      <div>
+        <label for="active">Active:</label>
+        <select name="active" id="active">
+        <option value="True" {% if fitness_class.active == True %}
+            selected="selected"
+        {% endif %}>True</option>
+        <option value="False" {% if fitness_class.active ==False %}
+            selected="selected"
+        {% endif %}>False</option>
+    </select>
+      </div>
+
+
+    <button type="submit">Edit Class</button>
+  
+  </form>
+
+  {% endblock content %}

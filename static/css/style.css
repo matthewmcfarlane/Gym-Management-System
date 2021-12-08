@@ -245,3 +245,12 @@ background-color: #f3f3f3;
 .bookings_table > tbody >tr:last-of-type{
 border-bottom: thin solid #009879;
 }
+
+.add-form {
+  text-align: center;
+  background-color: #f3f3f3;
+  border-collapse: collapse;
+  margin: 25px 0px; 
+  font-size: 0.9em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}

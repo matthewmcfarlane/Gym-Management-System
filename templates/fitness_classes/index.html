@@ -11,10 +11,12 @@
         <thead>
             <tr>
                 <th>Name</th>
+                <th>Capacity</th>
                 <th>Start Time</th>
                 <th>Duration</th>
                 <th>Day</th>
                 <th>Active</th>
+                <th>Edit</th>
                 <th>Delete</th>
             </tr>
         </thead>
@@ -22,10 +24,12 @@
             {% for class in classes %}
             <tr>
                 <td><a href="/fitness_classes/{{ class.id }}"></a>{{ class.name}}</td>
+                <td>{{ class.capacity }}</td>
                 <td>{{ class.start_time }}</td>
                 <td>{{ class.duration}}</td>
                 <td>{{ class.day }}</td>
                 <td>{{ class.active }}</td>
+                <td><a href="/fitness_classes/{{ class.id }}/edit">Edit</a></td>
                 <td>
                     <form class="delete_form" action="/fitness_classes/{{ class.id }}/delete" method="POST">
                         <button>Delete</button>
