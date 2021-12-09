@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block content %}
+    
+
+<form class="add-form" action="/bookings" method="post">
+
+
+
+
+    <div>
+        <label for="member">Member:</label>
+        <select id="member" name="member_id">
+          {% for member in members %}
+                {% if member.active == True %}
+                <option value="{{ member.id }}">{{ member.first_name }} {{ member.last_name }} ({{ member.id }}) </option>
+                {% endif %}
+          {% endfor %}
+        </select>
+      </div>
+  
+      <div>
+        <label for="fitness_class">Class:</label>
+        <select id="fitness_class" name="fitness_class_id">
+          {% for fitness_class in fitness_classes %}
+              {% if fitness_class.active == True %}
+              <option value="{{ fitness_class.id }}">{{ fitness_class.name }} - {{ fitness_class.day }} ({{ fitness_class.start_time }}) </option>
+              {% endif %}
+          {% endfor %}
+        </select>
+      </div>
+
+    
+
+    <button type="submit">Add Booking</button>
+  
+  </form>
+
+  {% endblock content %}

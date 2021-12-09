@@ -15,15 +15,15 @@ fitness_class_repository.delete_all()
 member_repository.delete_all()
 
 member1 = Member('Jack', 'Sparrow', '1950-12-01', 'js@poc.com', 'Standard', True)
-member2 = Member('Olaf', 'Snowman')
-member3 = Member('Lara', 'White', '1994-10-09', 'ljx@madeupemail.com', 'Premium', False)
+member2 = Member('John', 'Snow', '1970-10-04', 'jsnow@stark', 'Premium', True)
+member3 = Member('Homer', 'Simpson', '1960-10-09', 'homerjsimpson@sprfnuclear.com', 'Standard', False)
 member_repository.save(member1)
 member_repository.save(member2)
 member_repository.save(member3)
 
 
 fitness_class1 = FitnessClass('Zumba', 10, '18:30', 45, 'Monday', True)
-fitness_class2 = FitnessClass('Spin', 18, '12:30', 25, 'Wednesday')
+fitness_class2 = FitnessClass('Spin', 18, '12:30', 25, 'Wednesday', True)
 fitness_class3 = FitnessClass('Inductions', 4, '17:30', 75, 'Friday', False)
 fitness_class_repository.save(fitness_class1)
 fitness_class_repository.save(fitness_class2)

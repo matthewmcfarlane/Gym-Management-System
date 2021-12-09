@@ -27,7 +27,7 @@
             <td>{{ booking.member.last_name }}</td>
             <td>{{ booking.fitness_class.name }}</td>
             <td>{{ booking.fitness_class.day }}</td>
-            <td>{{ booking.fitness_class.time }}</td>
+            <td>{{ booking.fitness_class.start_time }}</td>
             <td>
                 <form class="delete_form" action="/bookings/{{ booking.id }}/delete" method='POST'>
                     <button >Delete</button>

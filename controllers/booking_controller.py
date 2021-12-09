@@ -23,9 +23,9 @@ def delete_booking(id):
 
 @bookings_blueprint.route('/bookings/add')
 def new_booking():
-    classes = fcr.select_all()
+    fitness_classes = fcr.select_all()
     members = member.select_all()
-    return render_template("/bookings/add.html", title='Add Booking', current_page='Add New Booking', classes=classes, members=members)
+    return render_template("/bookings/add.html", title='Add Booking', current_page='Add New Booking', fitness_classes=fitness_classes, members=members)
 
 @bookings_blueprint.route('/bookings', methods=['POST'])
 def create_booking():
@@ -34,5 +34,5 @@ def create_booking():
     mem = member.select(member_id)
     fitness_class = fcr.select(fitness_class_id)
     booking = Booking(mem, fitness_class)
-    booking.save(booking)
+    booking_repository.save(booking)
     return redirect('/bookings')
