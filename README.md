@@ -24,7 +24,7 @@ Extensions
 
 ## Screenshots
 
-See ![screenshots](screenshots/GymProjectScreenshots/) for additional images.
+See [screenshots](screenshots/GymProjectScreenshots/) for additional images.
 
 !["Home Page"](screenshots/GymProjectScreenshots/home.png)
 !["Members Page"](screenshots/GymProjectScreenshots/members.png)
