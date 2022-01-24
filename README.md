@@ -31,6 +31,7 @@ Extensions
 
 
 
+
 ## Instructions:
 
 1. Create database named gym by inputting the following into terminal - createdb gym
