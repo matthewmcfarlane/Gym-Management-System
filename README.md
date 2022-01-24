@@ -26,9 +26,16 @@ Extensions
 
 See [screenshots](screenshots/GymProjectScreenshots/) for additional images.
 
+Home Page
 !["Home Page"](screenshots/GymProjectScreenshots/home.png)
+
+Members Page
 !["Members Page"](screenshots/GymProjectScreenshots/members.png)
+
+Classes Page
 !["Classes Page"](screenshots/GymProjectScreenshots/classes.png)
+
+Bookings Page
 !["Bookings Page"](screenshots/GymProjectScreenshots/bookings.png)
 
 
