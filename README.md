@@ -22,6 +22,7 @@ Extensions
 - The app should allow for different membership types which determine the time the member can book classes 🟡
 
 
+## Screenshots
 
 
 
@@ -30,7 +31,7 @@ Extensions
 
 
 
-Instructions:
+## Instructions:
 
 1. Create database named gym by inputting the following into terminal - createdb gym
 2. Link database to gym.sql - From root folder of gym_project: psql -d gym -f db/gym.sql. (Run this command twice)
@@ -41,17 +42,4 @@ Instructions:
 
 
 
-
-BRIEF
-Gym
-
-
-
-Possible Extensions - NOT DONE YET
-Classes could have a maximum capacity, and users can only be added while there is space remaining.
-The gym could be able to give its members Premium or Standard membership. Standard members can only be signed up for classes during off-peak hours.
-The Gym could mark members and classes as active/deactivated. Deactivated members/classes will not appear when creating bookings.
-
-
-Screenshots:
 
