@@ -24,6 +24,31 @@ Extensions
 
 ## Screenshots
 
+See the screenshots folder for additional images.
+
+!["Home Page"](screenshots/GymProjectScreenshots/home.png)
+!["Members Page"](screenshots/GymProjectScreenshots/members.png)
+!["Classes Page"](screenshots/GymProjectScreenshots/classes.png)
+!["Bookings Page"](screenshots/GymProjectScreenshots/bookings.png)
+
+
+
+## Setup
+
+Prerequisites
+
+- Python3
+- Flask
+- PostgreSQL
+- Psycopg2
+
+Instructions
+
+- Create database named 'gym' by inputting the following into terminal - 'createdb gym'
+- From root folder of gym_project run the following command 'psql -d gym -f db/gym.sql' (Run this command twice)
+- Populate database using the following command 'python3 console.py'
+- Start the flask server - flask run
+- Go to http://127.0.0.1:5000/
 
 
 
@@ -31,14 +56,6 @@ Extensions
 
 
 
-
-## Instructions:
-
-1. Create database named gym by inputting the following into terminal - createdb gym
-2. Link database to gym.sql - From root folder of gym_project: psql -d gym -f db/gym.sql. (Run this command twice)
-3. Populate database using - python3 console.py
-4. Start the flask server - flask run
-5. Go to http://127.0.0.1:5000/ (Check *Running on xxx as this may be different)
 
 
 
