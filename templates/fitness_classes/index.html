@@ -6,7 +6,7 @@
     
     <a href="/fitness_classes/add"> <img src="/static/images/add_class.png" alt="Add ClassLogo/Button"></a>
 </div>
-    <table class="classes_table">
+    <table class="table-info">
         <caption>All Classes</caption>
         <thead>
             <tr>
@@ -22,17 +22,17 @@
         </thead>
         <tbody>
             {% for class in classes %}
-            <tr>
-                <td><a href="/fitness_classes/{{ class.id }}">{{ class.name}}</a></td>
+            <tr onclick="window.location='/fitness_classes/{{ class.id }}';"> 
+                <td>{{class.name}}</td>
                 <td>{{ class.capacity }}</td>
                 <td>{{ class.start_time }}</td>
                 <td>{{ class.duration}}</td>
                 <td>{{ class.day }}</td>
                 <td>{{ class.active }}</td>
-                <td><a href="/fitness_classes/{{ class.id }}/edit">Edit</a></td>
+                <td><a class="edit-link" href="/fitness_classes/{{ class.id }}/edit">Edit</a></td>
                 <td>
                     <form class="delete_form" action="/fitness_classes/{{ class.id }}/delete" method="POST">
-                        <button>Delete</button>
+                        <button class="button-delete">Delete</button>
                     </form>
                 </td>
             </tr>

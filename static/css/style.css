@@ -7,7 +7,7 @@
   }
   
   body{
-     background-color: #fff;
+     background-color: 
   }
   
   .wrapper{
@@ -16,11 +16,14 @@
   }
   
   .wrapper nav{
-    background: #4b4276;
+    background: #2e2e31;
     position: fixed;
     height: 100%;
     width: 200px;
     padding: 20px 0px;
+  }
+  .wrapper nav a{
+    text-decoration: none;
   }
   
   .wrapper nav h2{
@@ -42,7 +45,7 @@
   }    
   
   .wrapper nav ul li a{
-    color: #bdb8d7;
+    color: #aca8c5;
     display: block;
     text-decoration: none;
   }
@@ -52,11 +55,13 @@
   }
   
   .wrapper nav ul li:hover{
-    background-color: #594f8d;
+    background-color: #064e3f;
   }
+
+  
       
   .wrapper nav ul li:hover a{
-    color: #fff;
+    color: white;
   }
    
   
@@ -90,41 +95,40 @@
   
   }
 
-.members_table{
+.table-info{
     border-collapse: collapse;
     margin: 25px 0px;
     font-size: 0.9em;
-    min-width: 800px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-
-
+    width: 90%;
+    box-shadow: 0 0 20px rgba(26, 25, 25, 0.15);
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.members_table > thead > tr{
-    background-color: #009878;
-    color: #ffffff;
-    text-align: left;
+.table-info td, .table-info, th {
+  border: 1px solid #ddd;
+  padding: 8px;
 }
 
-.members_table > th{
-    padding: 12px 15px;
+
+.table-info tr:nth-child(even){background-color: #f2f2f2;}
+
+.table-info tr:hover {background-color: #ddd;}
+
+.table-info th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #06745e;
+  color: white;
+  
+}
+.table-info tr{
+  cursor: pointer;
 }
 
-.members_table > td{
-    padding: 12px 15px;
-}
 
-.members_table > tbody >tr {
-    border-bottom: thin solid #dddddd;
-}
 
-.members_table > tbody >tr:nth-of-type(){
-    background-color: #f3f3f3;
-}
-
-.members_table > tbody >tr:last-of-type{
-    border-bottom: thin solid #009879;
-}
 
 
 
@@ -137,41 +141,6 @@
     
 }
 
-.classes_table{
-  border-collapse: collapse;
-  margin: 25px 0px;
-  font-size: 0.9em;
-  min-width: 800px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-
-
-}
-
-.classes_table > thead > tr{
-  background-color: #009878;
-  color: #ffffff;
-  text-align: left;
-}
-
-.classes_table > th{
-  padding: 12px 15px;
-}
-
-.classes_table > td{
-  padding: 12px 15px;
-}
-
-.classes_table > tbody >tr {
-  border-bottom: thin solid #dddddd;
-}
-
-.classes_table > tbody >tr:nth-of-type(){
-  background-color: #f3f3f3;
-}
-
-.classes_table > tbody >tr:last-of-type{
-  border-bottom: thin solid #009879;
-}
 
 .flex-grid {
   display: flex;
@@ -210,41 +179,6 @@
   
 }
 
-.bookings_table{
-border-collapse: collapse;
-margin: 25px 0px;
-font-size: 0.9em;
-min-width: 800px;
-box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-
-
-}
-
-.bookings_table > thead > tr{
-background-color: #009878;
-color: #ffffff;
-text-align: left;
-}
-
-.bookings_table > th{
-padding: 12px 15px;
-}
-
-.bookings_table > td{
-padding: 12px 15px;
-}
-
-.bookings_table > tbody >tr {
-border-bottom: thin solid #dddddd;
-}
-
-.bookings_table > tbody >tr:nth-of-type(){
-background-color: #f3f3f3;
-}
-
-.bookings_table > tbody >tr:last-of-type{
-border-bottom: thin solid #009879;
-}
 
 .add-form {
   text-align: center;
@@ -253,4 +187,45 @@ border-bottom: thin solid #009879;
   margin: 25px 0px; 
   font-size: 0.9em;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+
+button {
+  background-color: #316d33;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  
+}
+
+.button-delete {
+  background-color: rgb(206, 15, 15)
+}
+
+
+
+.edit-link:link, .edit-link:visited{
+  background-color: #4999b1;
+  color: white;
+  padding: 6px 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  
+}
+
+
+
+
+.edit-link:hover, .edit-link:active {
+   cursor: default;
+}
+
+.logo{
+  height: 100px;
+  width: 100px;
+  margin-left: 40px;
+  margin-top: 0px;
 }

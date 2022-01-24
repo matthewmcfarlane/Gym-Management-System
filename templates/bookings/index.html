@@ -4,7 +4,7 @@
 <div class="add_class_logo">
     <a href="/bookings/add"> <img src="/static/images/add_class.png" alt="Add ClassLogo/Button"></a>
 </div>
-<table class="bookings_table">
+<table class="table-info">
     <caption>Bookings</caption>
     <thead>
         <tr>
@@ -30,7 +30,7 @@
             <td>{{ booking.fitness_class.start_time }}</td>
             <td>
                 <form class="delete_form" action="/bookings/{{ booking.id }}/delete" method='POST'>
-                    <button >Delete</button>
+                    <button class="button-delete">Delete</button>
                 </form>
             </td>
         </tr>

@@ -40,3 +40,11 @@ def update(member):
     sql = "UPDATE members SET (first_name, last_name, dob, email, membership_type, active) = (%s, %s, %s, %s, %s, %s) WHERE id = %s "
     values = [member.first_name, member.last_name, member.dob, member.email, member.membership_type, member.active, member.id]
     run_sql(sql, values)
+
+
+
+#Delete member from members table
+#Define function which takes member id as argument
+#   sql = query to delete based on id
+#   value = [id]
+#   call sql helper function and pass (sql,value)
