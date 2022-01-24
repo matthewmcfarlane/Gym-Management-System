@@ -23,8 +23,7 @@ Extensions
 
 
 ## Screenshots
-
-See [screenshots](screenshots/GymProjectScreenshots/) for additional images.
+Below are a select number of screenshots of the app, please see [screenshots](screenshots/GymProjectScreenshots/) for additional images.
 
 Home Page
 !["Home Page"](screenshots/GymProjectScreenshots/home.png)
